@@ -1,0 +1,12 @@
+        <header class="site-header">
+            <nav>
+                <ul>
+                    <li {% if page.parent == "home" %}class="active"{% endif %}><a href="{{ site.baseurl }}/" {% if page.parent == "home" %}class="active"{% endif %}>Home</a></li>
+                    <li {% if page.parent == "activities" %}class="active"{% endif %} ><a {% if page.parent == "activities" %}class="active"{% endif %} href="{{ site.baseurl }}/sequence-one/">Activities</a></li>
+                </ul>
+            </nav>
+            <div class="heading">
+                <div class="siteHeading">Alien Invasion teaching sequence</div>
+                <p>for VCE Biology</p>
+            </div>
+        </header>
