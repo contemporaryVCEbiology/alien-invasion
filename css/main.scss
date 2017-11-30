@@ -657,6 +657,9 @@ a.button:hover {
             content: " ";
             display: table;
         }
+        a {
+            color: #fff;
+        }
         &:after {
             clear: both;
         }
