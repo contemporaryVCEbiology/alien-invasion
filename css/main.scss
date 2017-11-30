@@ -639,6 +639,7 @@ a.button:hover {
         color: #fff;
     }
     .overlay-child {
+        overflow: scroll;
         position: fixed;
         top: 50%;
         left: 50%;
