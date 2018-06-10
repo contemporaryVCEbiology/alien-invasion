@@ -1,12 +1,22 @@
         <header class="site-header">
-            <nav>
-                <ul>
-                    <li {% if page.parent == "home" %}class="active"{% endif %}><a href="{{ site.baseurl }}/" {% if page.parent == "home" %}class="active"{% endif %}>Home</a></li>
-                    <li {% if page.parent == "activities" %}class="active"{% endif %} ><a {% if page.parent == "activities" %}class="active"{% endif %} href="{{ site.baseurl }}/sequence-one/">Activities</a></li>
-                </ul>
-            </nav>
             <div class="heading">
-                <div class="siteHeading">Alien Invasion</div>
+                <div class="siteHeading"><a href="{{ site.baseurl }}/">{{ site.siteHeading }}</a></div>
                 <p>for VCE Biology</p>
             </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="{{ site.baseurl }}/">Home</a></li>
+                    <li><a {% if page.parent == "sequence-one" %}class="active"{% endif %} href="{{ site.baseurl }}/sequence-one/">Sequence</a>
+                        <ul class="sub-menu {% if page.parent == "sequence-one" %}active{% endif %}">
+                            <li><a href="{{ site.baseurl }}/sequence-one/index.html" {% if page.activity == "one" %}class="current"{% endif %}>Activity 1</a></li>
+                            <li><a href="{{ site.baseurl }}/sequence-one/activity2.html" {% if page.activity == "two" %}class="current"{% endif %}>Activity 2</a></li>
+                            <li><a href="{{ site.baseurl }}/sequence-one/activity3.html" {% if page.activity == "three" %}class="current"{% endif %}>Activity 3</a></li>
+                            <li><a href="{{ site.baseurl }}/sequence-one/activity4.html" {% if page.activity == "four" %}class="current"{% endif %}>Activity 4</a></li>
+                            <li><a href="{{ site.baseurl }}/sequence-one/activity5.html" {% if page.activity == "five" %}class="current"{% endif %}>Activity 5</a></li>
+                            <li><a href="{{ site.baseurl }}/sequence-one/activity6.html" {% if page.activity == "six" %}class="current"{% endif %}>Activity 6</a></li>
+                            <li><a href="{{ site.baseurl }}/sequence-one/activity7.html" {% if page.activity == "seven" %}class="current"{% endif %}>Activity 7</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
         </header>
